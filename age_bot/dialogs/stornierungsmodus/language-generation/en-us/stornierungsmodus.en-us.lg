@@ -1,0 +1,23 @@
+[import](common.lg)
+
+# SendActivity_clmjzq()
+[Activity
+    Text = ${SendActivity_clmjzq_text()}
+]
+
+# SendActivity_clmjzq_text()
+- Das ist sehr schade, dass Sie eine Bestellung stornieren möchten.
+# ConfirmInput_Prompt_zlQktx()
+[Activity
+    Text = ${ConfirmInput_Prompt_zlQktx_text()}
+]
+
+# ConfirmInput_Prompt_zlQktx_text()
+- Kennen Sie Ihre Bestellnummer?
+# SendActivity_vj4mGm()
+[Activity
+    Text = ${SendActivity_vj4mGm_text()}
+]
+
+# SendActivity_vj4mGm_text()
+- Kennen Sie Ihre Bestellnummer: ${user.confirmed}
