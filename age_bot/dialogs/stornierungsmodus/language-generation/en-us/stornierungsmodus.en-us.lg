@@ -21,3 +21,31 @@
 
 # SendActivity_vj4mGm_text()
 - Kennen Sie Ihre Bestellnummer: ${user.confirmed}
+# SendActivity_LMJrUc()
+[Activity
+    Text = ${SendActivity_LMJrUc_text()}
+]
+
+# SendActivity_LMJrUc_text()
+- Please send an email to our support service
+# SendActivity_Fo9m2A()
+[Activity
+    Text = ${SendActivity_Fo9m2A_text()}
+]
+
+# SendActivity_Fo9m2A_text()
+- Warum haben sie die bestellung storniert?
+# ChoiceInput_Prompt_oCkJIR()
+[Activity
+    Text = ${ChoiceInput_Prompt_oCkJIR_text()}
+]
+
+# ChoiceInput_Prompt_oCkJIR_text()
+- Please select a reason
+# SendActivity_OyQjxR()
+[Activity
+    Text = ${SendActivity_OyQjxR_text()}
+]
+
+# SendActivity_OyQjxR_text()
+- ${conversation.reason_choice}

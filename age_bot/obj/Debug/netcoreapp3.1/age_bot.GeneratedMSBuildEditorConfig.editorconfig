@@ -1,3 +1,5 @@
 is_global = true
 build_property.RootNamespace = age_bot
-build_property.ProjectDir = /Users/lukasoberfrank/Workspace/Conversational-Agents/age_bot/age_bot/
+build_property.ProjectDir = C:\Users\PM\Desktop\age-chatbot\age_bot\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
