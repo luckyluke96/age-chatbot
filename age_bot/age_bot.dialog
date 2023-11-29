@@ -92,7 +92,7 @@
     "intents": [
       {
         "intent": "stornierung",
-        "pattern": "ja"
+        "pattern": "yes"
       }
     ]
   }

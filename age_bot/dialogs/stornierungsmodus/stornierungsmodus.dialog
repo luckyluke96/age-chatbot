@@ -17,6 +17,20 @@
       },
       "actions": [
         {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "GiClCq"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${TextInput_Prompt_GiClCq()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "property": "user.name"
+        },
+        {
           "$kind": "Microsoft.SendActivity",
           "$designer": {
             "id": "clmjzq"
@@ -36,7 +50,6 @@
           "prompt": "${ConfirmInput_Prompt_zlQktx()}",
           "unrecognizedPrompt": "",
           "invalidPrompt": "",
-          "defaultValueResponse": "",
           "choiceOptions": {
             "includeNumbers": true,
             "inlineOrMore": ", or ",
@@ -52,59 +65,121 @@
           },
           "actions": [
             {
-              "$kind": "Microsoft.SendActivity",
+              "$kind": "Microsoft.TextInput",
               "$designer": {
-                "id": "Fo9m2A"
+                "id": "O9nxfa"
               },
-              "activity": "${SendActivity_Fo9m2A()}"
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "prompt": "${TextInput_Prompt_O9nxfa()}",
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "property": "user.orderNumber"
             },
             {
-              "$kind": "Microsoft.SetProperty",
+              "$kind": "Microsoft.IfCondition",
               "$designer": {
-                "id": "IZ9r6y"
+                "id": "24daXg"
               },
-              "property": "conversation.reasons",
-              "value": [
-                "Sunday",
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday"
+              "condition": "=user.orderNumber == '123'||user.orderNumber == '12345'||user.orderNumber == '1234'",
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "W4zgwa"
+                  },
+                  "activity": "${SendActivity_W4zgwa()}"
+                },
+                {
+                  "$kind": "Microsoft.SetProperty",
+                  "$designer": {
+                    "id": "yVT5Ph"
+                  },
+                  "property": "conversation.lastOrders",
+                  "value": [
+                    "123",
+                    "1234",
+                    "12345"
+                  ]
+                },
+                {
+                  "$kind": "Microsoft.ChoiceInput",
+                  "$designer": {
+                    "id": "YQZIc5"
+                  },
+                  "defaultLocale": "en-us",
+                  "disabled": false,
+                  "maxTurnCount": 3,
+                  "alwaysPrompt": false,
+                  "allowInterruptions": false,
+                  "prompt": "${ChoiceInput_Prompt_YQZIc5()}",
+                  "unrecognizedPrompt": "",
+                  "invalidPrompt": "",
+                  "defaultValueResponse": "",
+                  "choiceOptions": {
+                    "includeNumbers": true,
+                    "inlineOrMore": ", or ",
+                    "inlineOr": " or ",
+                    "inlineSeparator": ", "
+                  },
+                  "property": "conversation.lastOrdersChoice",
+                  "outputFormat": "value",
+                  "style": "heroCard",
+                  "choices": "=conversation.lastOrders",
+                  "recognizerOptions": {
+                    "recognizeOrdinals": true
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "n6X8ik"
+                  },
+                  "activity": "${SendActivity_n6X8ik()}"
+                }
               ]
             },
             {
-              "$kind": "Microsoft.ChoiceInput",
+              "$kind": "Microsoft.ConfirmInput",
               "$designer": {
-                "id": "oCkJIR"
+                "id": "NFzL4L"
               },
               "defaultLocale": "en-us",
               "disabled": false,
               "maxTurnCount": 3,
               "alwaysPrompt": false,
               "allowInterruptions": false,
-              "prompt": "${ChoiceInput_Prompt_oCkJIR()}",
+              "prompt": "${ConfirmInput_Prompt_NFzL4L()}",
               "unrecognizedPrompt": "",
               "invalidPrompt": "",
-              "defaultValueResponse": "",
               "choiceOptions": {
                 "includeNumbers": true,
                 "inlineOrMore": ", or ",
                 "inlineOr": " or ",
                 "inlineSeparator": ", "
               },
-              "property": "conversation.reason_choice",
-              "outputFormat": "index",
-              "style": "heroCard",
-              "choices": "=conversation.reasons"
+              "property": "user.cancel"
             },
             {
-              "$kind": "Microsoft.SendActivity",
+              "$kind": "Microsoft.IfCondition",
               "$designer": {
-                "id": "OyQjxR"
+                "id": "EVfO8Z"
               },
-              "activity": "${SendActivity_OyQjxR()}"
+              "condition": "=user.cancel",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "uzErc8"
+                  },
+                  "activity": "${SendActivity_uzErc8()}"
+                }
+              ],
+              "elseActions": []
             }
           ],
           "condition": "=user.confirmed",
@@ -117,13 +192,6 @@
               "activity": "${SendActivity_LMJrUc()}"
             }
           ]
-        },
-        {
-          "$kind": "Microsoft.SendActivity",
-          "$designer": {
-            "id": "vj4mGm"
-          },
-          "activity": "${SendActivity_vj4mGm()}"
         }
       ]
     }

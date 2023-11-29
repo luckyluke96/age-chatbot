@@ -6,46 +6,68 @@
 ]
 
 # SendActivity_clmjzq_text()
-- Das ist sehr schade, dass Sie eine Bestellung stornieren möchten.
+- This is very sad that you want to cancel an order, ${user.name}
 # ConfirmInput_Prompt_zlQktx()
 [Activity
     Text = ${ConfirmInput_Prompt_zlQktx_text()}
 ]
 
 # ConfirmInput_Prompt_zlQktx_text()
-- Kennen Sie Ihre Bestellnummer?
-# SendActivity_vj4mGm()
-[Activity
-    Text = ${SendActivity_vj4mGm_text()}
-]
-
-# SendActivity_vj4mGm_text()
-- Kennen Sie Ihre Bestellnummer: ${user.confirmed}
+- Do you know your order number?
 # SendActivity_LMJrUc()
 [Activity
     Text = ${SendActivity_LMJrUc_text()}
 ]
 
 # SendActivity_LMJrUc_text()
-- Please send an email to our support service
-# SendActivity_Fo9m2A()
+- Bye bye
+# TextInput_Prompt_GiClCq()
 [Activity
-    Text = ${SendActivity_Fo9m2A_text()}
+    Text = ${TextInput_Prompt_GiClCq_text()}
 ]
 
-# SendActivity_Fo9m2A_text()
-- Warum haben sie die bestellung storniert?
-# ChoiceInput_Prompt_oCkJIR()
+# TextInput_Prompt_GiClCq_text()
+- What is your name?
+# TextInput_Prompt_O9nxfa()
 [Activity
-    Text = ${ChoiceInput_Prompt_oCkJIR_text()}
+    Text = ${TextInput_Prompt_O9nxfa_text()}
 ]
 
-# ChoiceInput_Prompt_oCkJIR_text()
-- Please select a reason
-# SendActivity_OyQjxR()
+# TextInput_Prompt_O9nxfa_text()
+- What is your Order Number?
+# SendActivity_W4zgwa()
 [Activity
-    Text = ${SendActivity_OyQjxR_text()}
+    Text = ${SendActivity_W4zgwa_text()}
 ]
 
-# SendActivity_OyQjxR_text()
-- ${conversation.reason_choice}
+# SendActivity_W4zgwa_text()
+- ```That is not correct. Here are your last orders:
+```
+# SendActivity_n6X8ik()
+[Activity
+    Text = ${SendActivity_n6X8ik_text()}
+]
+
+# SendActivity_n6X8ik_text()
+- true
+# ChoiceInput_Prompt_YQZIc5_text()
+- Please select a Order Number.
+# ChoiceInput_Prompt_YQZIc5()
+[Activity
+    Text = ${ChoiceInput_Prompt_YQZIc5_text()}
+]
+
+# ConfirmInput_Prompt_NFzL4L_text()
+- Are you sure, you want to cancel order ${conversation.lastOrdersChoice}?
+# ConfirmInput_Prompt_NFzL4L()
+[Activity
+    Text = ${ConfirmInput_Prompt_NFzL4L_text()}
+]
+
+# SendActivity_uzErc8()
+[Activity
+    Text = ${SendActivity_uzErc8_text()}
+]
+
+# SendActivity_uzErc8_text()
+- ali implentention...

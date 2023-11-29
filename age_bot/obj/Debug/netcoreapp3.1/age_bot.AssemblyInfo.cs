@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("age_bot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38555432f22aa5b34f4428a53455beec2eea3cdb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d9504ce3599392662e9667a2033dd4604df4991")]
 [assembly: System.Reflection.AssemblyProductAttribute("age_bot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("age_bot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
