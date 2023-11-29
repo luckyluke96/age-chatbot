@@ -70,4 +70,110 @@
 ]
 
 # SendActivity_uzErc8_text()
-- ali implentention...
+- Why do you want to cancel your order ?
+# SendActivity_iALHXh_text()
+- ```That is not correct. Here are your last orders:
+```
+# SendActivity_iALHXh()
+[Activity
+    Text = ${SendActivity_iALHXh_text()}
+]
+
+# ChoiceInput_Prompt_MlaeVS_text()
+- Please select one reason:
+# ChoiceInput_Prompt_MlaeVS()
+[Activity
+    Text = ${ChoiceInput_Prompt_MlaeVS_text()}
+]
+
+# SendActivity_4Edbrw()
+[Activity
+    Text = ${SendActivity_4Edbrw_text()}
+]
+
+# SendActivity_4Edbrw_text()
+- I'm sorry to hear that.
+# ConfirmInput_Prompt_3gMC8s_text()
+- Are you sure, you want to cancel order ${conversation.lastOrdersChoice}?
+# ConfirmInput_Prompt_3gMC8s()
+[Activity
+    Text = ${ConfirmInput_Prompt_3gMC8s_text()}
+]
+
+# SendActivity_HiFlhP_text()
+- Why do you want to cancel your order ?
+# SendActivity_HiFlhP()
+[Activity
+    Text = ${SendActivity_HiFlhP_text()}
+]
+
+# ChoiceInput_Prompt_qIgYxX_text()
+- Please select one reason:
+# ChoiceInput_Prompt_qIgYxX()
+[Activity
+    Text = ${ChoiceInput_Prompt_qIgYxX_text()}
+]
+
+# SendActivity_Bs4Ic6_text()
+- I'm sorry to hear that.
+# SendActivity_Bs4Ic6()
+[Activity
+    Text = ${SendActivity_Bs4Ic6_text()}
+]
+
+# ConfirmInput_Prompt_veUB2p()
+[Activity
+    Text = ${ConfirmInput_Prompt_veUB2p_text()}
+]
+
+# ConfirmInput_Prompt_veUB2p_text()
+- Have you received your order yet?
+# SendActivity_QJu1FK()
+[Activity
+    Text = ${SendActivity_QJu1FK_text()}
+]
+
+# SendActivity_QJu1FK_text()
+- Please return the order.
+# SendActivity_dQspZ8()
+[Activity
+    Text = ${SendActivity_dQspZ8_text()}
+]
+
+# SendActivity_dQspZ8_text()
+- We will initiate the cancellation of the order.
+# SendActivity_nNTeQH()
+[Activity
+    Text = ${SendActivity_nNTeQH_text()}
+]
+
+# SendActivity_nNTeQH_text()
+- How do you want to get your refund?
+# ChoiceInput_Prompt_UIuVyj_text()
+- Please select one payment methode:
+# ChoiceInput_Prompt_UIuVyj()
+[Activity
+    Text = ${ChoiceInput_Prompt_UIuVyj_text()}
+]
+
+# SendActivity_Ce40hg()
+[Activity
+    Text = ${SendActivity_Ce40hg_text()}
+]
+
+# SendActivity_Ce40hg_text()
+- We will refund the money to ${conversation.refundChoice}
+# SendActivity_kaMwla()
+[Activity
+    Text = ${SendActivity_kaMwla_text()}
+]
+
+# SendActivity_kaMwla_text()
+- We will refund the money as ${conversation.refundChoice}
+# SendActivity_ZZKCwZ()
+[Activity
+    Text = ${SendActivity_ZZKCwZ_text()}
+]
+
+# SendActivity_ZZKCwZ_text()
+- Goodbye

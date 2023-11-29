@@ -177,9 +177,179 @@
                     "id": "uzErc8"
                   },
                   "activity": "${SendActivity_uzErc8()}"
+                },
+                {
+                  "$kind": "Microsoft.SetProperty",
+                  "$designer": {
+                    "id": "UwRSzk"
+                  },
+                  "property": "conversation.cancelReason",
+                  "value": [
+                    "Item too big",
+                    "Item too small",
+                    "Item is not as described",
+                    "Item delivered too late",
+                    "I received a wrong Item",
+                    "Price-Performance ratio"
+                  ]
+                },
+                {
+                  "$kind": "Microsoft.ChoiceInput",
+                  "$designer": {
+                    "id": "MlaeVS"
+                  },
+                  "defaultLocale": "en-us",
+                  "disabled": false,
+                  "maxTurnCount": 3,
+                  "alwaysPrompt": false,
+                  "allowInterruptions": false,
+                  "prompt": "${ChoiceInput_Prompt_MlaeVS()}",
+                  "unrecognizedPrompt": "",
+                  "invalidPrompt": "",
+                  "defaultValueResponse": "",
+                  "choiceOptions": {
+                    "includeNumbers": true,
+                    "inlineOrMore": ", or ",
+                    "inlineOr": " or ",
+                    "inlineSeparator": ", "
+                  },
+                  "property": "conversation.cancelReasonChoice",
+                  "outputFormat": "value",
+                  "style": "heroCard",
+                  "choices": "=conversation.cancelReason",
+                  "recognizerOptions": {
+                    "recognizeOrdinals": true
+                  }
+                },
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "4Edbrw"
+                  },
+                  "activity": "${SendActivity_4Edbrw()}"
                 }
               ],
               "elseActions": []
+            },
+            {
+              "$kind": "Microsoft.ConfirmInput",
+              "$designer": {
+                "id": "veUB2p"
+              },
+              "defaultLocale": "en-us",
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "defaultValueResponse": "",
+              "choiceOptions": {
+                "includeNumbers": true,
+                "inlineOrMore": ", or ",
+                "inlineOr": " or "
+              },
+              "prompt": "${ConfirmInput_Prompt_veUB2p()}",
+              "property": "user.order"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "4Ylwli"
+              },
+              "condition": "=user.order",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "QJu1FK"
+                  },
+                  "activity": "${SendActivity_QJu1FK()}"
+                }
+              ],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "dQspZ8"
+                  },
+                  "activity": "${SendActivity_dQspZ8()}"
+                }
+              ]
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "nNTeQH"
+              },
+              "activity": "${SendActivity_nNTeQH()}"
+            },
+            {
+              "$kind": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "HOemFE"
+              },
+              "property": "conversation.refund",
+              "value": [
+                "Same as Payment",
+                "Credit Card",
+                "Debit Card",
+                "IBAN number",
+                "Cash"
+              ]
+            },
+            {
+              "$kind": "Microsoft.ChoiceInput",
+              "$designer": {
+                "id": "UIuVyj"
+              },
+              "defaultLocale": "en-us",
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "prompt": "${ChoiceInput_Prompt_UIuVyj()}",
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "defaultValueResponse": "",
+              "choiceOptions": {
+                "includeNumbers": true,
+                "inlineOrMore": ", or ",
+                "inlineOr": " or ",
+                "inlineSeparator": ", "
+              },
+              "property": "conversation.refundChoice",
+              "outputFormat": "value",
+              "style": "heroCard",
+              "choices": "=conversation.refund",
+              "recognizerOptions": {
+                "recognizeOrdinals": true
+              }
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "UgQiEZ"
+              },
+              "condition": "=conversation.refundChoice== \"Credit Card\" ||conversation.refundChoice== \"Debit Card\" ||conversation.refundChoice== \"IBAN number\"",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "Ce40hg"
+                  },
+                  "activity": "${SendActivity_Ce40hg()}"
+                }
+              ],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "kaMwla"
+                  },
+                  "activity": "${SendActivity_kaMwla()}"
+                }
+              ]
             }
           ],
           "condition": "=user.confirmed",
@@ -192,6 +362,13 @@
               "activity": "${SendActivity_LMJrUc()}"
             }
           ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "ZZKCwZ"
+          },
+          "activity": "${SendActivity_ZZKCwZ()}"
         }
       ]
     }
