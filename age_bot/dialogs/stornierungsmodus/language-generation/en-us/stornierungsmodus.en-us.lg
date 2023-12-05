@@ -6,7 +6,7 @@
 ]
 
 # SendActivity_clmjzq_text()
-- This is very sad that you want to cancel an order, ${user.name}
+- Hello ${user.name}!
 # ConfirmInput_Prompt_zlQktx()
 [Activity
     Text = ${ConfirmInput_Prompt_zlQktx_text()}
@@ -27,14 +27,14 @@
 ]
 
 # TextInput_Prompt_GiClCq_text()
-- What is your name?
+- What is your name? 😊
 # TextInput_Prompt_O9nxfa()
 [Activity
     Text = ${TextInput_Prompt_O9nxfa_text()}
 ]
 
 # TextInput_Prompt_O9nxfa_text()
-- What is your Order Number?
+- PLS enter your order number.
 # SendActivity_W4zgwa()
 [Activity
     Text = ${SendActivity_W4zgwa_text()}
@@ -49,9 +49,9 @@
 ]
 
 # SendActivity_n6X8ik_text()
-- true
+- THX! That is a correct order number.
 # ChoiceInput_Prompt_YQZIc5_text()
-- Please select a Order Number.
+- Please select an order number.
 # ChoiceInput_Prompt_YQZIc5()
 [Activity
     Text = ${ChoiceInput_Prompt_YQZIc5_text()}
@@ -92,7 +92,7 @@
 ]
 
 # SendActivity_4Edbrw_text()
-- I'm sorry to hear that.
+- I'm sorry to hear that 🥲
 # ConfirmInput_Prompt_3gMC8s_text()
 - Are you sure, you want to cancel order ${conversation.lastOrdersChoice}?
 # ConfirmInput_Prompt_3gMC8s()
@@ -134,7 +134,7 @@
 ]
 
 # SendActivity_QJu1FK_text()
-- Please return the order.
+- Please return the order. We will send you an e-mail with more info by EOD. 
 # SendActivity_dQspZ8()
 [Activity
     Text = ${SendActivity_dQspZ8_text()}
@@ -150,7 +150,7 @@
 # SendActivity_nNTeQH_text()
 - How do you want to get your refund?
 # ChoiceInput_Prompt_UIuVyj_text()
-- Please select one payment methode:
+- Please select one payment method 💰
 # ChoiceInput_Prompt_UIuVyj()
 [Activity
     Text = ${ChoiceInput_Prompt_UIuVyj_text()}
@@ -162,7 +162,7 @@
 ]
 
 # SendActivity_Ce40hg_text()
-- We will refund the money to ${conversation.refundChoice}
+- We will refund the money to your ${conversation.refundChoice} ASAP
 # SendActivity_kaMwla()
 [Activity
     Text = ${SendActivity_kaMwla_text()}
