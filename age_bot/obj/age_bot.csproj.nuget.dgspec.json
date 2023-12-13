@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/lukasoberfrank/Workspace/Conversational-Agents/age-chatbot/age_bot/age_bot.csproj": {}
+    "C:\\Users\\Ali\\Documents\\GitHub\\age-chatbot\\age_bot\\age_bot.csproj": {}
   },
   "projects": {
-    "/Users/lukasoberfrank/Workspace/Conversational-Agents/age-chatbot/age_bot/age_bot.csproj": {
+    "C:\\Users\\Ali\\Documents\\GitHub\\age-chatbot\\age_bot\\age_bot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lukasoberfrank/Workspace/Conversational-Agents/age-chatbot/age_bot/age_bot.csproj",
+        "projectUniqueName": "C:\\Users\\Ali\\Documents\\GitHub\\age-chatbot\\age_bot\\age_bot.csproj",
         "projectName": "age_bot",
-        "projectPath": "/Users/lukasoberfrank/Workspace/Conversational-Agents/age-chatbot/age_bot/age_bot.csproj",
-        "packagesPath": "/Users/lukasoberfrank/.nuget/packages/",
-        "outputPath": "/Users/lukasoberfrank/Workspace/Conversational-Agents/age-chatbot/age_bot/obj/",
+        "projectPath": "C:\\Users\\Ali\\Documents\\GitHub\\age-chatbot\\age_bot\\age_bot.csproj",
+        "packagesPath": "C:\\Users\\Ali\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ali\\Documents\\GitHub\\age-chatbot\\age_bot\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/lukasoberfrank/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Ali\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -24,7 +24,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -36,7 +35,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
@@ -61,25 +59,10 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.osx-x64",
-              "version": "[3.1.32, 3.1.32]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -88,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.426\\RuntimeIdentifierGraph.json"
         }
       }
     }

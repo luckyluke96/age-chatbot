@@ -1,0 +1,16 @@
+[import](common.lg)
+
+# TextInput_Prompt_aC78ZQ()
+[Activity
+    Text = ${TextInput_Prompt_aC78ZQ_text()}
+]
+
+# TextInput_Prompt_aC78ZQ_text()
+- Why do you want to cancel your order ?
+# SendActivity_w2OaW8()
+[Activity
+    Text = ${SendActivity_w2OaW8_text()}
+]
+
+# SendActivity_w2OaW8_text()
+- Im sorry to hear that.

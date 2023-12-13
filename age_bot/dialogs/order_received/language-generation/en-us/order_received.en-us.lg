@@ -1,0 +1,23 @@
+[import](common.lg)
+
+# ConfirmInput_Prompt_BNLB87()
+[Activity
+    Text = ${ConfirmInput_Prompt_BNLB87_text()}
+]
+
+# ConfirmInput_Prompt_BNLB87_text()
+- Have you received your order yet ?
+# SendActivity_E6tP65()
+[Activity
+    Text = ${SendActivity_E6tP65_text()}
+]
+
+# SendActivity_E6tP65_text()
+- We will initiate the cancellation of the order
+# SendActivity_1zcxOa()
+[Activity
+    Text = ${SendActivity_1zcxOa_text()}
+]
+
+# SendActivity_1zcxOa_text()
+- Please return the order
