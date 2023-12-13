@@ -80,7 +80,7 @@
             "id": "Q35p9M"
           },
           "activityProcessed": true,
-          "dialog": "stornierungsmodus"
+          "dialog": "order_detail"
         }
       ]
     }

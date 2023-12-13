@@ -1,0 +1,51 @@
+[import](common.lg)
+
+# ConfirmInput_Prompt_nBg0z5()
+[Activity
+    Text = ${ConfirmInput_Prompt_nBg0z5_text()}
+]
+
+# ConfirmInput_Prompt_nBg0z5_text()
+- Do you know your order number?
+# SendActivity_kRmmCK()
+[Activity
+    Text = ${SendActivity_kRmmCK_text()}
+]
+
+# SendActivity_kRmmCK_text()
+- Here your last orders:
+# ChoiceInput_Prompt_H3fL17_text()
+- Please select an order number.
+# ChoiceInput_Prompt_H3fL17()
+[Activity
+    Text = ${ChoiceInput_Prompt_H3fL17_text()}
+]
+
+# TextInput_Prompt_LXN2SZ()
+[Activity
+    Text = ${TextInput_Prompt_LXN2SZ_text()}
+]
+
+# TextInput_Prompt_LXN2SZ_text()
+- PLS enter your order number.
+# SendActivity_iSSD6o_text()
+- THX! That is a correct order number.
+# SendActivity_iSSD6o()
+[Activity
+    Text = ${SendActivity_iSSD6o_text()}
+]
+
+# SendActivity_4bTs68_text()
+- ```That is not correct. Here are your last orders:
+```
+# SendActivity_4bTs68()
+[Activity
+    Text = ${SendActivity_4bTs68_text()}
+]
+
+# ChoiceInput_Prompt_1POYuF_text()
+- Please select an order number.
+# ChoiceInput_Prompt_1POYuF()
+[Activity
+    Text = ${ChoiceInput_Prompt_1POYuF_text()}
+]
