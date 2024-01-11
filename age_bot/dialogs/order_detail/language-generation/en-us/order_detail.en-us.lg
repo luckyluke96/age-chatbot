@@ -13,9 +13,9 @@
 ]
 
 # SendActivity_kRmmCK_text()
-- No worries, I got you! Here is a list of your recent purchases and the order numbers. Pls enter the order no. you want to cancel.
+- No worries, I got you! Here is a list of your recent purchases and the order numbers. Pls enter the order you want to cancel.
 # ChoiceInput_Prompt_H3fL17_text()
-- Please select an order number.
+- Please select an order.
 # ChoiceInput_Prompt_H3fL17()
 [Activity
     Text = ${ChoiceInput_Prompt_H3fL17_text()}
@@ -44,7 +44,7 @@
 ]
 
 # ChoiceInput_Prompt_1POYuF_text()
-- Please select an order number.
+- Please select an order.
 # ChoiceInput_Prompt_1POYuF()
 [Activity
     Text = ${ChoiceInput_Prompt_1POYuF_text()}
@@ -57,3 +57,41 @@
 
 # SendActivity_sDj9JS_text()
 - Hold up, while I quickly check if the order no. exists in my database. BRB!
+# SendActivity_UlUfb8()
+[Activity
+    Attachments = ${SendActivity_UlUfb8_attachment_OY16xW()} | ${SendActivity_UlUfb8_attachment_XU69v0()} | ${SendActivity_UlUfb8_attachment_9QBmBu()}
+]
+
+# SendActivity_UlUfb8_attachment_OY16xW()
+[ThumbnailCard
+  title = "Water Bottle"
+  subtitle = Order number: 12345678
+  text = Outdoor waterbottle. Aluminium. Ordered Dec 04, 2023
+  images = https://www.qualitylogoproducts.com/custom-waterbottles/trek-bottle-25-oz-hq-262443.jpg?size=details_zoomed
+]
+
+# SendActivity_UlUfb8_attachment_XU69v0()
+[ThumbnailCard
+  title = "Outdoor Tent"
+  subtitle = Order number: 44444444
+  text = Outdoor tent for three persons. Ordered Dec 21, 2023
+  images = https://i.otto.de/i/otto/4757b4bd-ac07-51d0-8eb5-fe3436f7f8da/10t-outdoor-equipment-kuppelzelt-zelt-glenhill-beechnut-4-mann-kuppelzelt-xl-schlafkabine-5000mm-iglu-personen-4.jpg?$formatz$
+]
+# SendActivity_UlUfb8_attachment_9QBmBu()
+[ThumbnailCard
+  title = Backpack
+  subtitle = Order number: 24122024
+  text = Azure blue backpack. Great for hiking. Ordered Jan 11, 2024
+  image = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSYWVjhFY2thGpb4ZMeRF3vGFBnDTK4yw_-8yw-gd6EJxgls1sbbZ6pMjUz_zdb06y_NM&usqp=CAU
+]
+# SendActivity_JCFycK()
+[Activity
+    Attachments = ${SendActivity_UlUfb8_attachment_OY16xW()} | ${SendActivity_UlUfb8_attachment_XU69v0()} | ${SendActivity_UlUfb8_attachment_9QBmBu()}
+]
+# SendActivity_xv1hsk()
+[Activity
+    Text = ${SendActivity_xv1hsk_text()}
+]
+
+# SendActivity_xv1hsk_text()
+- Alright! You want to cancel the order of the ${conversation.lastOrderChoice}.

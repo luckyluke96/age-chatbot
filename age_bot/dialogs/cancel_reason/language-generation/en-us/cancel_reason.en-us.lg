@@ -13,4 +13,4 @@
 ]
 
 # SendActivity_w2OaW8_text()
-- I'm sorry to hear that 🥲
+- I'm sorry to hear that, ${user.name} 🥲

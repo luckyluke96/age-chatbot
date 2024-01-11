@@ -1,0 +1,140 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "rilKtF",
+    "name": "order_payment",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "StzNoa"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "INRtuo"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "property": "conversation.paymentMethod",
+          "choices": [
+            "Same as Payment",
+            "Credit Card",
+            "Debit Card",
+            "Bank transfer",
+            "Cash"
+          ],
+          "prompt": "${ChoiceInput_Prompt_INRtuo()}"
+        },
+        {
+          "$kind": "Microsoft.ConfirmInput",
+          "$designer": {
+            "id": "THhSbh"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ConfirmInput_Prompt_THhSbh()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or "
+          },
+          "property": "conversation.refundConfirmation"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "odTLX8"
+          },
+          "condition": "=conversation.refundConfirmation",
+          "actions": [
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "JTvn3U"
+              },
+              "condition": "=conversation.paymentMethod== \"Credit Card\" ||conversation.paymentMethod== \"Debit Card\" ||conversation.paymentMethod== \"IBAN number\"",
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "UmblvC"
+                  },
+                  "activity": "${SendActivity_UmblvC()}"
+                }
+              ],
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "430waP"
+                  },
+                  "activity": "${SendActivity_430waP()}"
+                }
+              ]
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.DeleteProperties",
+              "$designer": {
+                "id": "fsjnaK"
+              },
+              "properties": [
+                "conversation.paymentMethod",
+                "conversation.refundConfirmation"
+              ]
+            },
+            {
+              "$kind": "Microsoft.RepeatDialog",
+              "$designer": {
+                "id": "BgKumR"
+              },
+              "activityProcessed": true
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "mpQ1ph"
+          },
+          "activity": "${SendActivity_mpQ1ph()}"
+        },
+        {
+          "$kind": "Microsoft.EndDialog",
+          "$designer": {
+            "id": "PB0CK7"
+          }
+        }
+      ]
+    }
+  ],
+  "generator": "order_payment.lg",
+  "recognizer": "order_payment.lu.qna",
+  "id": "order_payment"
+}

@@ -31,7 +31,8 @@
           "defaultValueResponse": "",
           "prompt": "${ConfirmInput_Prompt_StCjmR()}",
           "choiceOptions": {
-            "includeNumbers": true
+            "includeNumbers": true,
+            "inlineOrMore": ", or "
           },
           "property": "conversation.cancelConfirm"
         },
@@ -41,21 +42,7 @@
             "id": "FrCVud"
           },
           "condition": "=conversation.cancelConfirm",
-          "elseActions": [
-            {
-              "$kind": "Microsoft.SendActivity",
-              "$designer": {
-                "id": "a9MeOh"
-              },
-              "activity": "${SendActivity_a9MeOh()}"
-            },
-            {
-              "$kind": "Microsoft.EndDialog",
-              "$designer": {
-                "id": "aeHKhV"
-              }
-            }
-          ],
+          "elseActions": [],
           "actions": [
             {
               "$kind": "Microsoft.BeginDialog",

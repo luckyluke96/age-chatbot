@@ -1,0 +1,30 @@
+[import](common.lg)
+
+# ConfirmInput_Prompt_BNLB87()
+[Activity
+    Text = ${ConfirmInput_Prompt_BNLB87_text()}
+]
+
+# ConfirmInput_Prompt_BNLB87_text()
+- Have you received your order yet ?
+# SendActivity_E6tP65()
+[Activity
+    Text = ${SendActivity_E6tP65_text()}
+]
+
+# SendActivity_E6tP65_text()
+- I will initiate the cancellation ASAP.
+# TextInput_Prompt_l74T5F()
+[Activity
+    Text = ${TextInput_Prompt_l74T5F_text()}
+]
+
+# TextInput_Prompt_l74T5F_text()
+- I see 👀. I’m gonna schedule a pickup for the delivered item RN. Pls tell me what day & time is suitable for you.
+# SendActivity_ZXeP5z()
+[Activity
+    Text = ${SendActivity_ZXeP5z_text()}
+]
+
+# SendActivity_ZXeP5z_text()
+- Thanks!
