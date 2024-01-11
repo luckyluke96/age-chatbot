@@ -13,7 +13,7 @@
 ]
 
 # SendActivity_mpQ1ph_text()
-- Bye Bye
+- Hope this helped 🤞 Goodbye  👋 
 # ChoiceInput_Prompt_INRtuo()
 [Activity
     Text = ${ChoiceInput_Prompt_INRtuo_text()}
@@ -22,7 +22,7 @@
 # ChoiceInput_Prompt_INRtuo_text()
 - How do you want to get your refund?
 # SendActivity_430waP_text()
-- We will refund the money to your ${conversation.paymentMethod} ASAP
+- Alright, that works. Your money will be refunded to your ${conversation.paymentMethod} 
 # SendActivity_430waP()
 [Activity
     Text = ${SendActivity_430waP_text()}

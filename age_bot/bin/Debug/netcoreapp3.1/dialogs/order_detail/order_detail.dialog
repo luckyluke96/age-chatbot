@@ -58,9 +58,9 @@
               },
               "property": "conversation.lastOrder",
               "value": [
-                "123",
-                "1234",
-                "12345"
+                "12345678",
+                "44444444",
+                "24122024"
               ]
             },
             {
@@ -120,7 +120,7 @@
               "$designer": {
                 "id": "477tZe"
               },
-              "condition": "=user.Order == '123'||user.Order== '12345'||user.Order== '1234'",
+              "condition": "=user.Order == '12345678'||user.Order== '12345'||user.Order== '1234'",
               "elseActions": [
                 {
                   "$kind": "Microsoft.SendActivity",
@@ -136,9 +136,9 @@
                   },
                   "property": "conversation.lastOrder",
                   "value": [
-                    "123",
-                    "1234",
-                    "12345"
+                    "12345678",
+                    "44444444",
+                    "24122024"
                   ]
                 },
                 {

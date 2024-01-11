@@ -40,7 +40,7 @@
             "Same as Payment",
             "Credit Card",
             "Debit Card",
-            "IBAN number",
+            "Bank transfer",
             "Cash"
           ],
           "prompt": "${ChoiceInput_Prompt_INRtuo()}"
