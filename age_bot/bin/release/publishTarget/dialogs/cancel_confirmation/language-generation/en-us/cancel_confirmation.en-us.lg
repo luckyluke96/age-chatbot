@@ -6,11 +6,4 @@
 ]
 
 # ConfirmInput_Prompt_StCjmR_text()
-- Are you sure you want to cancel your order?
-# SendActivity_a9MeOh()
-[Activity
-    Text = ${SendActivity_a9MeOh_text()}
-]
-
-# SendActivity_a9MeOh_text()
-- Bye Bye
+- Is this correct?

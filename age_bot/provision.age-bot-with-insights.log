@@ -1,0 +1,23 @@
+{
+  "profileName": "age-bot-with-insights",
+  "jobId": "157f0e21-2047-43a4-bb32-be4ae2f22ce7",
+  "projectId": "45017.161634308555",
+  "time": "2024-01-11T20:22:31.928Z",
+  "log": [
+    "Creating Azure resources...",
+    "Checking the Existence of the Resource Group ...",
+    "Use the Resource Group: age-bot-resource-group-west-europe at westeurope",
+    "> Creating App Registration ...",
+    "Start to add password for App, Id : aace8724-d7cb-4da6-bde3-fa6ca3674d58",
+    "> Create App Registration Success! ID: aace8724-d7cb-4da6-bde3-fa6ca3674d58",
+    "Deploying Web App Resource ...",
+    "Deploying Bot Resource ...",
+    "Deploying Application Insights Resource ...",
+    "> Linking Application Insights settings to Bot Service ...",
+    "> AppInsights AppId: 0b8f71ab-5db3-4a84-977f-b395faf4ee71 ...",
+    "> AppInsights InstrumentationKey: 82c3f062-613e-4f4f-8c2d-cd1acc115855 ...",
+    "> AppInsights ApiKey: dqu0jorrcnolxf6u2tlijavcjvwzmrquuat476yn ...",
+    "> Linking Application Insights settings to Bot Service Success!",
+    "Provisioning completed successfully!"
+  ]
+}

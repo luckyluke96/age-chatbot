@@ -52,25 +52,11 @@
           ],
           "actions": [
             {
-              "$kind": "Microsoft.TextInput",
-              "$designer": {
-                "id": "l74T5F"
-              },
-              "disabled": false,
-              "maxTurnCount": 3,
-              "alwaysPrompt": false,
-              "allowInterruptions": false,
-              "unrecognizedPrompt": "",
-              "invalidPrompt": "",
-              "defaultValueResponse": "",
-              "prompt": "${TextInput_Prompt_l74T5F()}"
-            },
-            {
               "$kind": "Microsoft.SendActivity",
               "$designer": {
-                "id": "ZXeP5z"
+                "id": "tuWiKW"
               },
-              "activity": "${SendActivity_ZXeP5z()}"
+              "activity": "${SendActivity_tuWiKW()}"
             }
           ]
         },

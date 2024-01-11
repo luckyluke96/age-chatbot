@@ -28,12 +28,12 @@
           "allowInterruptions": false,
           "unrecognizedPrompt": "",
           "invalidPrompt": "",
-          "defaultValueResponse": "",
           "prompt": "${ConfirmInput_Prompt_nBg0z5()}",
           "choiceOptions": {
             "includeNumbers": true,
             "inlineOrMore": ", or ",
-            "inlineOr": " or "
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
           },
           "property": "user.confirmedOrderDetail"
         },
@@ -52,15 +52,22 @@
               "activity": "${SendActivity_kRmmCK()}"
             },
             {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "UlUfb8"
+              },
+              "activity": "${SendActivity_UlUfb8()}"
+            },
+            {
               "$kind": "Microsoft.SetProperty",
               "$designer": {
                 "id": "bvUcFO"
               },
               "property": "conversation.lastOrder",
               "value": [
-                "12345678",
-                "44444444",
-                "24122024"
+                "Water Bottle",
+                "Outdoor Tent",
+                "Backpack"
               ]
             },
             {
@@ -120,7 +127,7 @@
               "$designer": {
                 "id": "477tZe"
               },
-              "condition": "=user.Order == '12345678'||user.Order== '12345'||user.Order== '1234'",
+              "condition": "=user.Order == '12345678'",
               "elseActions": [
                 {
                   "$kind": "Microsoft.SendActivity",
@@ -136,10 +143,17 @@
                   },
                   "property": "conversation.lastOrder",
                   "value": [
-                    "12345678",
-                    "44444444",
-                    "24122024"
+                    "Water Bottle",
+                    "Outdoor Tent",
+                    "Backpack"
                   ]
+                },
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "JCFycK"
+                  },
+                  "activity": "${SendActivity_JCFycK()}"
                 },
                 {
                   "$kind": "Microsoft.ChoiceInput",
@@ -177,18 +191,33 @@
                     "id": "iSSD6o"
                   },
                   "activity": "${SendActivity_iSSD6o()}"
+                },
+                {
+                  "$kind": "Microsoft.SetProperty",
+                  "$designer": {
+                    "id": "wykFc9"
+                  },
+                  "property": "conversation.lastOrderChoice",
+                  "value": "Backpack"
                 }
               ]
             }
           ]
         },
         {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "i0T0xH"
+          },
+          "activity": "${SendActivity_i0T0xH()}"
+        },
+        {
           "$kind": "Microsoft.BeginDialog",
           "$designer": {
-            "id": "qttBE9"
+            "id": "irmD1e"
           },
           "activityProcessed": true,
-          "dialog": "cancel_confirmation"
+          "dialog": "cancel_reason"
         }
       ]
     }
