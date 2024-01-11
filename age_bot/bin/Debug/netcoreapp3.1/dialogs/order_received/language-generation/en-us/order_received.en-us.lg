@@ -13,11 +13,18 @@
 ]
 
 # SendActivity_E6tP65_text()
-- We will initiate the cancellation of the order
-# SendActivity_1zcxOa()
+- I will initiate the cancellation ASAP.
+# TextInput_Prompt_l74T5F()
 [Activity
-    Text = ${SendActivity_1zcxOa_text()}
+    Text = ${TextInput_Prompt_l74T5F_text()}
 ]
 
-# SendActivity_1zcxOa_text()
-- Please return the order
+# TextInput_Prompt_l74T5F_text()
+- I see 👀. I’m gonna schedule a pickup for the delivered item RN. Pls tell me what day & time is suitable for you.
+# SendActivity_ZXeP5z()
+[Activity
+    Text = ${SendActivity_ZXeP5z_text()}
+]
+
+# SendActivity_ZXeP5z_text()
+- Thanks!

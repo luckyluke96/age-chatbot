@@ -109,6 +109,13 @@
               "property": "user.Order"
             },
             {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "sDj9JS"
+              },
+              "activity": "${SendActivity_sDj9JS()}"
+            },
+            {
               "$kind": "Microsoft.IfCondition",
               "$designer": {
                 "id": "477tZe"

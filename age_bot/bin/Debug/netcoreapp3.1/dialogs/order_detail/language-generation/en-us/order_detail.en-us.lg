@@ -49,3 +49,11 @@
 [Activity
     Text = ${ChoiceInput_Prompt_1POYuF_text()}
 ]
+
+# SendActivity_sDj9JS()
+[Activity
+    Text = ${SendActivity_sDj9JS_text()}
+]
+
+# SendActivity_sDj9JS_text()
+- Hold up, while I quickly check if the order no. exists in my database. BRB!
