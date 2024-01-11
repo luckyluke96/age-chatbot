@@ -13,7 +13,7 @@
 ]
 
 # SendActivity_kRmmCK_text()
-- Here your last orders:
+- No worries, I got you! Here is a list of your recent purchases and the order numbers. Pls enter the order no. you want to cancel.
 # ChoiceInput_Prompt_H3fL17_text()
 - Please select an order number.
 # ChoiceInput_Prompt_H3fL17()
@@ -27,7 +27,7 @@
 ]
 
 # TextInput_Prompt_LXN2SZ_text()
-- PLS enter your order number.
+- GR8! Pls enter the order no. you want to cancel.
 # SendActivity_iSSD6o_text()
 - THX! That is a correct order number.
 # SendActivity_iSSD6o()
