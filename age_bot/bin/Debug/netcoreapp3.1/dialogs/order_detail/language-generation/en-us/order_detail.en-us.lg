@@ -88,10 +88,10 @@
 [Activity
     Attachments = ${SendActivity_UlUfb8_attachment_OY16xW()} | ${SendActivity_UlUfb8_attachment_XU69v0()} | ${SendActivity_UlUfb8_attachment_9QBmBu()}
 ]
-# SendActivity_xv1hsk()
+# SendActivity_i0T0xH()
 [Activity
-    Text = ${SendActivity_xv1hsk_text()}
+    Text = ${SendActivity_i0T0xH_text()}
 ]
 
-# SendActivity_xv1hsk_text()
-- Alright! You want to cancel the order of the ${conversation.lastOrderChoice}.
+# SendActivity_i0T0xH_text()
+- Alright! You want to cancel the order of the ${conversation.lastOrderChoice}. Is this correct?

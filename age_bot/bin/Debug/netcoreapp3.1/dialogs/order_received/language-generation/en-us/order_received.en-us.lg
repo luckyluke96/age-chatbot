@@ -20,4 +20,4 @@
 ]
 
 # SendActivity_tuWiKW_text()
-- I see 👀. I’m gonna schedule a pickup for the delivered item RN. 
+- I see 👀. Please prepare the ${conversation.lastOrderChoice} I’m gonna schedule a pickup for the delivered item RN.

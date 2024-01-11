@@ -28,12 +28,12 @@
           "allowInterruptions": false,
           "unrecognizedPrompt": "",
           "invalidPrompt": "",
-          "defaultValueResponse": "",
           "prompt": "${ConfirmInput_Prompt_nBg0z5()}",
           "choiceOptions": {
             "includeNumbers": true,
             "inlineOrMore": ", or ",
-            "inlineOr": " or "
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
           },
           "property": "user.confirmedOrderDetail"
         },
@@ -207,9 +207,9 @@
         {
           "$kind": "Microsoft.SendActivity",
           "$designer": {
-            "id": "xv1hsk"
+            "id": "i0T0xH"
           },
-          "activity": "${SendActivity_xv1hsk()}"
+          "activity": "${SendActivity_i0T0xH()}"
         },
         {
           "$kind": "Microsoft.BeginDialog",

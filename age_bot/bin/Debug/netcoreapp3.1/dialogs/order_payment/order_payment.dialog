@@ -126,6 +126,13 @@
           "activity": "${SendActivity_mpQ1ph()}"
         },
         {
+          "$kind": "Microsoft.CancelAllDialogs",
+          "$designer": {
+            "id": "MyOiZV"
+          },
+          "activityProcessed": true
+        },
+        {
           "$kind": "Microsoft.EndDialog",
           "$designer": {
             "id": "PB0CK7"
