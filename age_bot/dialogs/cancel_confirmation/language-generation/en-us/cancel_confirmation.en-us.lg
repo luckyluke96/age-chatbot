@@ -6,11 +6,18 @@
 ]
 
 # ConfirmInput_Prompt_StCjmR_text()
-- Are you sure you want to cancel your order?
+- Are you sure you want to proceed with canceling the order?
 # SendActivity_a9MeOh()
 [Activity
     Text = ${SendActivity_a9MeOh_text()}
 ]
 
 # SendActivity_a9MeOh_text()
-- Bye Bye
+- No worries!
+# SendActivity_MjrOSA()
+[Activity
+    Text = ${SendActivity_MjrOSA_text()}
+]
+
+# SendActivity_MjrOSA_text()
+- I’m sorry to hear that 😔

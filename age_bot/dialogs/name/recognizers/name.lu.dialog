@@ -1,5 +1,5 @@
 {
   "$kind": "Microsoft.MultiLanguageRecognizer",
-  "id": "LUIS_user_name",
+  "id": "LUIS_name",
   "recognizers": {}
 }

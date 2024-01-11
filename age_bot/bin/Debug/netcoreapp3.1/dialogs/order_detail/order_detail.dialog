@@ -33,7 +33,8 @@
           "choiceOptions": {
             "includeNumbers": true,
             "inlineOrMore": ", or ",
-            "inlineOr": " or "
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
           },
           "property": "user.confirmedOrderDetail"
         },
@@ -58,9 +59,9 @@
               },
               "property": "conversation.lastOrder",
               "value": [
-                "123",
-                "1234",
-                "12345"
+                "12345678",
+                "44444444",
+                "24122024"
               ]
             },
             {
@@ -105,16 +106,29 @@
               "prompt": "${TextInput_Prompt_LXN2SZ()}",
               "unrecognizedPrompt": "",
               "invalidPrompt": "",
-              "defaultValueResponse": "",
               "property": "user.Order"
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "R3Fo9p"
+              },
+              "activity": "${SendActivity_R3Fo9p()}"
             },
             {
               "$kind": "Microsoft.IfCondition",
               "$designer": {
                 "id": "477tZe"
               },
-              "condition": "=user.Order == '123'||user.Order== '12345'||user.Order== '1234'",
+              "condition": "=user.Order == '12345678'||user.Order== '44444444'||user.Order== '24122024'",
               "elseActions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "5Radr6"
+                  },
+                  "activity": "${SendActivity_5Radr6()}"
+                },
                 {
                   "$kind": "Microsoft.SendActivity",
                   "$designer": {
@@ -129,9 +143,9 @@
                   },
                   "property": "conversation.lastOrder",
                   "value": [
-                    "123",
-                    "1234",
-                    "12345"
+                    "12345678",
+                    "44444444",
+                    "24122024"
                   ]
                 },
                 {

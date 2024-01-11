@@ -41,24 +41,37 @@
             "id": "0xwLVW"
           },
           "condition": "=conversation.OrderReceived",
-          "elseActions": [
-            {
-              "$kind": "Microsoft.SendActivity",
-              "$designer": {
-                "id": "E6tP65"
-              },
-              "activity": "${SendActivity_E6tP65()}"
-            }
-          ],
+          "elseActions": [],
           "actions": [
             {
+              "$kind": "Microsoft.TextInput",
+              "$designer": {
+                "id": "i3N6oS"
+              },
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "defaultValueResponse": "",
+              "prompt": "${TextInput_Prompt_i3N6oS()}"
+            },
+            {
               "$kind": "Microsoft.SendActivity",
               "$designer": {
-                "id": "1zcxOa"
+                "id": "WY7k6L"
               },
-              "activity": "${SendActivity_1zcxOa()}"
+              "activity": "${SendActivity_WY7k6L()}"
             }
           ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "dwaqkR"
+          },
+          "activity": "${SendActivity_dwaqkR()}"
         },
         {
           "$kind": "Microsoft.BeginDialog",

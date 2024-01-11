@@ -1,8 +1,8 @@
 {
   "$kind": "Microsoft.AdaptiveDialog",
   "$designer": {
-    "id": "E7WLuE",
-    "name": "user_name",
+    "id": "HU2hxN",
+    "name": "name",
     "comment": ""
   },
   "autoEndDialog": true,
@@ -13,19 +13,19 @@
       "$designer": {
         "name": "BeginDialog",
         "description": "",
-        "id": "VuetwX"
+        "id": "7L3ORf"
       },
       "actions": [
         {
           "$kind": "Microsoft.TextInput",
           "$designer": {
-            "id": "nUhst6"
+            "id": "riYbHI"
           },
           "disabled": false,
           "maxTurnCount": 3,
           "alwaysPrompt": false,
           "allowInterruptions": false,
-          "prompt": "${TextInput_Prompt_nUhst6()}",
+          "prompt": "${TextInput_Prompt_riYbHI()}",
           "unrecognizedPrompt": "",
           "invalidPrompt": "",
           "defaultValueResponse": "",
@@ -34,14 +34,14 @@
         {
           "$kind": "Microsoft.SendActivity",
           "$designer": {
-            "id": "QARt7u"
+            "id": "43Hj9R"
           },
-          "activity": "${SendActivity_QARt7u()}"
+          "activity": "${SendActivity_43Hj9R()}"
         },
         {
           "$kind": "Microsoft.BeginDialog",
           "$designer": {
-            "id": "6TXh9M"
+            "id": "RGVkbg"
           },
           "activityProcessed": true,
           "dialog": "order_detail"
@@ -49,7 +49,7 @@
       ]
     }
   ],
-  "generator": "user_name.lg",
-  "recognizer": "user_name.lu.qna",
-  "id": "user_name"
+  "generator": "name.lg",
+  "recognizer": "name.lu.qna",
+  "id": "name"
 }

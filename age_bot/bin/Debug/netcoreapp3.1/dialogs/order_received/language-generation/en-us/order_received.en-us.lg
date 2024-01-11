@@ -7,17 +7,24 @@
 
 # ConfirmInput_Prompt_BNLB87_text()
 - Have you received your order yet ?
-# SendActivity_E6tP65()
+# TextInput_Prompt_i3N6oS()
 [Activity
-    Text = ${SendActivity_E6tP65_text()}
+    Text = ${TextInput_Prompt_i3N6oS_text()}
 ]
 
-# SendActivity_E6tP65_text()
-- We will initiate the cancellation of the order
-# SendActivity_1zcxOa()
+# TextInput_Prompt_i3N6oS_text()
+- I see 👀. I’m gonna schedule a pickup for the delivered item RN. Pls tell me what day & time is suitable for you.
+# SendActivity_WY7k6L()
 [Activity
-    Text = ${SendActivity_1zcxOa_text()}
+    Text = ${SendActivity_WY7k6L_text()}
 ]
 
-# SendActivity_1zcxOa_text()
-- Please return the order
+# SendActivity_WY7k6L_text()
+- Thanks.
+# SendActivity_dwaqkR()
+[Activity
+    Text = ${SendActivity_dwaqkR_text()}
+]
+
+# SendActivity_dwaqkR_text()
+- I will initiate the cancellation ASAP. 

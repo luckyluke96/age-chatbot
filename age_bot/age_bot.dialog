@@ -75,12 +75,19 @@
       "intent": "stornierung",
       "actions": [
         {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "bJ6BaD"
+          },
+          "activity": "${SendActivity_bJ6BaD()}"
+        },
+        {
           "$kind": "Microsoft.BeginDialog",
           "$designer": {
-            "id": "Q35p9M"
+            "id": "oqmx2O"
           },
           "activityProcessed": true,
-          "dialog": "order_detail"
+          "dialog": "name"
         }
       ]
     }
