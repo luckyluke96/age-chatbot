@@ -13,7 +13,7 @@
 ]
 
 # SendActivity_kRmmCK_text()
-- No worries, I got you! Here is a list of your recent purchases and the order numbers. Pls enter the order no. you want to cancel.
+- Here your last orders:
 # ChoiceInput_Prompt_H3fL17_text()
 - Please select an order number.
 # ChoiceInput_Prompt_H3fL17()
@@ -27,16 +27,16 @@
 ]
 
 # TextInput_Prompt_LXN2SZ_text()
-- GR8! Pls enter the order no. you want to cancel.
+- PLS enter your order number.
 # SendActivity_iSSD6o_text()
-- The order no. exists. 
+- THX! That is a correct order number.
 # SendActivity_iSSD6o()
 [Activity
     Text = ${SendActivity_iSSD6o_text()}
 ]
 
 # SendActivity_4bTs68_text()
-- ```No worries, I got you! Here is a list of your recent purchases and the order numbers. Pls enter the order no. you want to cancel.
+- ```That is not correct. Here are your last orders:
 ```
 # SendActivity_4bTs68()
 [Activity
@@ -49,18 +49,3 @@
 [Activity
     Text = ${ChoiceInput_Prompt_1POYuF_text()}
 ]
-
-# SendActivity_R3Fo9p()
-[Activity
-    Text = ${SendActivity_R3Fo9p_text()}
-]
-
-# SendActivity_R3Fo9p_text()
-- Hold up, while I quickly check if the order no. exists in my database. BRB!
-# SendActivity_5Radr6()
-[Activity
-    Text = ${SendActivity_5Radr6_text()}
-]
-
-# SendActivity_5Radr6_text()
-- Unfortunately, there is no order with this number.

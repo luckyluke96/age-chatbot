@@ -31,8 +31,7 @@
           "defaultValueResponse": "",
           "prompt": "${ConfirmInput_Prompt_StCjmR()}",
           "choiceOptions": {
-            "includeNumbers": true,
-            "inlineOrMore": ", or "
+            "includeNumbers": true
           },
           "property": "conversation.cancelConfirm"
         },
@@ -46,28 +45,18 @@
             {
               "$kind": "Microsoft.SendActivity",
               "$designer": {
-                "id": "a9MeOh",
-                "comment": ""
+                "id": "a9MeOh"
               },
               "activity": "${SendActivity_a9MeOh()}"
             },
             {
-              "$kind": "Microsoft.BeginDialog",
+              "$kind": "Microsoft.EndDialog",
               "$designer": {
-                "id": "XIWqbc"
-              },
-              "activityProcessed": true,
-              "dialog": "order_detail"
+                "id": "aeHKhV"
+              }
             }
           ],
           "actions": [
-            {
-              "$kind": "Microsoft.SendActivity",
-              "$designer": {
-                "id": "MjrOSA"
-              },
-              "activity": "${SendActivity_MjrOSA()}"
-            },
             {
               "$kind": "Microsoft.BeginDialog",
               "$designer": {

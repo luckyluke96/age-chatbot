@@ -1,37 +1,36 @@
 [import](common.lg)
 
+# ConfirmInput_Prompt_THhSbh()
+[Activity
+    Text = ${ConfirmInput_Prompt_THhSbh_text()}
+]
+
+# ConfirmInput_Prompt_THhSbh_text()
+- Please confirm your choice : ${conversation.paymentMethod}
 # SendActivity_mpQ1ph()
 [Activity
     Text = ${SendActivity_mpQ1ph_text()}
 ]
 
 # SendActivity_mpQ1ph_text()
-- Hope this helped 🤞 Goodbye  👋
-# ChoiceInput_Prompt_pizrSc()
+- Bye Bye
+# ChoiceInput_Prompt_INRtuo()
 [Activity
-    Text = ${ChoiceInput_Prompt_pizrSc_text()}
+    Text = ${ChoiceInput_Prompt_INRtuo_text()}
 ]
 
-# ChoiceInput_Prompt_pizrSc_text()
-- which paym,ent
-# SendActivity_q1RpG4()
+# ChoiceInput_Prompt_INRtuo_text()
+- How do you want to get your refund?
+# SendActivity_430waP_text()
+- We will refund the money to your ${conversation.paymentMethod} ASAP
+# SendActivity_430waP()
 [Activity
-    Text = ${SendActivity_q1RpG4_text()}
+    Text = ${SendActivity_430waP_text()}
 ]
 
-# SendActivity_q1RpG4_text()
-- teestest
-# ChoiceInput_Prompt_jMnjkk()
+# SendActivity_UmblvC_text()
+- We will refund the money as ${conversation.paymentMethod}
+# SendActivity_UmblvC()
 [Activity
-    Text = ${ChoiceInput_Prompt_jMnjkk_text()}
+    Text = ${SendActivity_UmblvC_text()}
 ]
-
-# ChoiceInput_Prompt_jMnjkk_text()
-- How would you like to received your refund?
-# SendActivity_Kv06Qk()
-[Activity
-    Text = ${SendActivity_Kv06Qk_text()}
-]
-
-# SendActivity_Kv06Qk_text()
-- Alright, that works. Your money will be refunded as ${conversation.paymentMethod}

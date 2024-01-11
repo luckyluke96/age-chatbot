@@ -19,14 +19,13 @@
         {
           "$kind": "Microsoft.ChoiceInput",
           "$designer": {
-            "id": "jMnjkk"
+            "id": "INRtuo"
           },
           "defaultLocale": "en-us",
           "disabled": false,
           "maxTurnCount": 3,
           "alwaysPrompt": false,
           "allowInterruptions": false,
-          "prompt": "${ChoiceInput_Prompt_jMnjkk()}",
           "unrecognizedPrompt": "",
           "invalidPrompt": "",
           "defaultValueResponse": "",
@@ -36,22 +35,88 @@
             "inlineOr": " or ",
             "inlineSeparator": ", "
           },
+          "property": "conversation.paymentMethod",
           "choices": [
-            "Same as payment",
+            "Same as Payment",
             "Credit Card",
             "Debit Card",
-            "Bank transfer",
+            "IBAN number",
             "Cash"
           ],
-          "style": "heroCard",
-          "property": "conversation.paymentMethod"
+          "prompt": "${ChoiceInput_Prompt_INRtuo()}"
         },
         {
-          "$kind": "Microsoft.SendActivity",
+          "$kind": "Microsoft.ConfirmInput",
           "$designer": {
-            "id": "Kv06Qk"
+            "id": "THhSbh"
           },
-          "activity": "${SendActivity_Kv06Qk()}"
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ConfirmInput_Prompt_THhSbh()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or "
+          },
+          "property": "conversation.refundConfirmation"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "odTLX8"
+          },
+          "condition": "=conversation.refundConfirmation",
+          "actions": [
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "JTvn3U"
+              },
+              "condition": "=conversation.paymentMethod== \"Credit Card\" ||conversation.paymentMethod== \"Debit Card\" ||conversation.paymentMethod== \"IBAN number\"",
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "UmblvC"
+                  },
+                  "activity": "${SendActivity_UmblvC()}"
+                }
+              ],
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "430waP"
+                  },
+                  "activity": "${SendActivity_430waP()}"
+                }
+              ]
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.DeleteProperties",
+              "$designer": {
+                "id": "fsjnaK"
+              },
+              "properties": [
+                "conversation.paymentMethod",
+                "conversation.refundConfirmation"
+              ]
+            },
+            {
+              "$kind": "Microsoft.RepeatDialog",
+              "$designer": {
+                "id": "BgKumR"
+              },
+              "activityProcessed": true
+            }
+          ]
         },
         {
           "$kind": "Microsoft.SendActivity",
