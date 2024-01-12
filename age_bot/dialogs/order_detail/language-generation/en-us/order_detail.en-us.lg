@@ -94,4 +94,4 @@
 ]
 
 # SendActivity_i0T0xH_text()
-- Alright! You want to cancel the order of the ${conversation.lastOrderChoice}. Is this correct?
+- Alright! You want to cancel the order of the ${conversation.lastOrderChoice}. 
