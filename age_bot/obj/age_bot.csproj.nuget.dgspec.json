@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/lukasoberfrank/Workspace/Conversational-Agents/age-chatbot/age_bot/age_bot.csproj": {}
+    "/Users/lukasoberfrank/workspace/Conversational-Agents/age-chatbot/age_bot/age_bot.csproj": {}
   },
   "projects": {
-    "/Users/lukasoberfrank/Workspace/Conversational-Agents/age-chatbot/age_bot/age_bot.csproj": {
+    "/Users/lukasoberfrank/workspace/Conversational-Agents/age-chatbot/age_bot/age_bot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lukasoberfrank/Workspace/Conversational-Agents/age-chatbot/age_bot/age_bot.csproj",
+        "projectUniqueName": "/Users/lukasoberfrank/workspace/Conversational-Agents/age-chatbot/age_bot/age_bot.csproj",
         "projectName": "age_bot",
-        "projectPath": "/Users/lukasoberfrank/Workspace/Conversational-Agents/age-chatbot/age_bot/age_bot.csproj",
+        "projectPath": "/Users/lukasoberfrank/workspace/Conversational-Agents/age-chatbot/age_bot/age_bot.csproj",
         "packagesPath": "/Users/lukasoberfrank/.nuget/packages/",
-        "outputPath": "/Users/lukasoberfrank/Workspace/Conversational-Agents/age-chatbot/age_bot/obj/",
+        "outputPath": "/Users/lukasoberfrank/workspace/Conversational-Agents/age-chatbot/age_bot/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/lukasoberfrank/.nuget/NuGet/NuGet.Config"
@@ -72,12 +72,20 @@
               "version": "[3.1.10, 3.1.10]"
             },
             {
-              "name": "Microsoft.NETCore.App.Host.osx-x64",
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[3.1.32, 3.1.32]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
               "version": "[3.1.32, 3.1.32]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
               "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[3.1.32, 3.1.32]"
             }
           ],
           "frameworkReferences": {
@@ -89,6 +97,11 @@
             }
           },
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     }
