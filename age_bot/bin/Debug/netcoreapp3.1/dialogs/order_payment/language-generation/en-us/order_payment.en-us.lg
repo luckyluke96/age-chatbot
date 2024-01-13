@@ -6,7 +6,7 @@
 ]
 
 # ConfirmInput_Prompt_THhSbh_text()
-- Please confirm your choice: ${conversation.paymentMethod}
+- Pls confirm your choice: ${conversation.paymentMethod}
 # SendActivity_mpQ1ph()
 [Activity
     Text = ${SendActivity_mpQ1ph_text()}
@@ -34,3 +34,11 @@
 [Activity
     Text = ${SendActivity_UmblvC_text()}
 ]
+
+# SendActivity_tfsx90()
+[Activity
+    Text = ${SendActivity_tfsx90_text()}
+]
+
+# SendActivity_tfsx90_text()
+- Please follow this link to get to the questionnaire: https://studentische-umfragen.uni-hamburg.de/index.php/297193?newtest=Y&lang=en

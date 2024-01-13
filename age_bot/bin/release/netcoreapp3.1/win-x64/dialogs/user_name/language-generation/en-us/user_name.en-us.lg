@@ -6,11 +6,11 @@
 ]
 
 # TextInput_Prompt_nUhst6_text()
-- What is your name? 
+- But first, could you tell me UR name?
 # SendActivity_QARt7u()
 [Activity
     Text = ${SendActivity_QARt7u_text()}
 ]
 
 # SendActivity_QARt7u_text()
-- Hello ${user.name}
+- Heyy ${user.name} 😊

@@ -6,9 +6,7 @@
 ]
 
 # SendActivity_Greeting_text()
-- ```Hey there! 👋 I’m Scout, your personal assistant for the AdventureEssentials website, at your beck and call for all your outdoor sports needs. 
-Do you want to cancel a recent order?
-Answer "yes" or "no".```
+- Hey there! 👋 I’m Scout, your personal assistant for the AdventureEssentials website, at your back and call for all your outdoor sports needs. 
 # SendActivity_DidNotUnderstand()
 [Activity
     Text = ${SendActivity_DidNotUnderstand_text()}

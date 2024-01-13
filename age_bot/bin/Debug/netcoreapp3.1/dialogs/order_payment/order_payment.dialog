@@ -126,6 +126,13 @@
           "activity": "${SendActivity_mpQ1ph()}"
         },
         {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "tfsx90"
+          },
+          "activity": "${SendActivity_tfsx90()}"
+        },
+        {
           "$kind": "Microsoft.CancelAllDialogs",
           "$designer": {
             "id": "MyOiZV"

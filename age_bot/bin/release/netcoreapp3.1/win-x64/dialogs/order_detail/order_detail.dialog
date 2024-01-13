@@ -127,7 +127,7 @@
               "$designer": {
                 "id": "477tZe"
               },
-              "condition": "=user.Order == '12345678'",
+              "condition": "=user.Order == '24122024'",
               "elseActions": [
                 {
                   "$kind": "Microsoft.SendActivity",
