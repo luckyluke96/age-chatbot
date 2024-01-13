@@ -6,7 +6,7 @@
 ]
 
 # TextInput_Prompt_nUhst6_text()
-- But first, could you tell me UR name?
+- But first, could u tell me your name?
 # SendActivity_QARt7u()
 [Activity
     Text = ${SendActivity_QARt7u_text()}
