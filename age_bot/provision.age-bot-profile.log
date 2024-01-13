@@ -1,0 +1,17 @@
+{
+  "profileName": "age-bot-profile",
+  "jobId": "e1c8c340-5f43-492d-98ac-60260f13aed2",
+  "projectId": "45017.161634308555",
+  "time": "2024-01-11T12:27:26.651Z",
+  "log": [
+    "Creating Azure resources...",
+    "Checking the Existence of the Resource Group ...",
+    "Use the Resource Group: age-bot-resource-group-west-europe at westeurope",
+    "> Creating App Registration ...",
+    "Start to add password for App, Id : 5a7093a9-b842-4d4b-b197-4c712c3db5c4",
+    "> Create App Registration Success! ID: 5a7093a9-b842-4d4b-b197-4c712c3db5c4",
+    "Deploying Web App Resource ...",
+    "Deploying Bot Resource ...",
+    "Provisioning completed successfully!"
+  ]
+}

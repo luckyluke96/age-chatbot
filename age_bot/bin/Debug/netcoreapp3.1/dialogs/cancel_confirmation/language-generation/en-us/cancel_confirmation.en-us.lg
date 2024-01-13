@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# ConfirmInput_Prompt_StCjmR()
+[Activity
+    Text = ${ConfirmInput_Prompt_StCjmR_text()}
+]
+
+# ConfirmInput_Prompt_StCjmR_text()
+- Is this correct?

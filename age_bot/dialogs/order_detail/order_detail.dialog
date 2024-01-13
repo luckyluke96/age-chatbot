@@ -1,0 +1,228 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "V08GiF",
+    "name": "order_detail",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "w69bbp"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.ConfirmInput",
+          "$designer": {
+            "id": "nBg0z5"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "prompt": "${ConfirmInput_Prompt_nBg0z5()}",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "property": "user.confirmedOrderDetail"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "4qoiam"
+          },
+          "condition": "=user.confirmedOrderDetail",
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "kRmmCK"
+              },
+              "activity": "${SendActivity_kRmmCK()}"
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "UlUfb8"
+              },
+              "activity": "${SendActivity_UlUfb8()}"
+            },
+            {
+              "$kind": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "bvUcFO"
+              },
+              "property": "conversation.lastOrder",
+              "value": [
+                "Water Bottle",
+                "Outdoor Tent",
+                "Backpack"
+              ]
+            },
+            {
+              "$kind": "Microsoft.ChoiceInput",
+              "$designer": {
+                "id": "H3fL17"
+              },
+              "defaultLocale": "en-us",
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "prompt": "${ChoiceInput_Prompt_H3fL17()}",
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "defaultValueResponse": "",
+              "choiceOptions": {
+                "includeNumbers": true,
+                "inlineOrMore": ", or ",
+                "inlineOr": " or ",
+                "inlineSeparator": ", "
+              },
+              "property": "conversation.LastOrderChoice",
+              "outputFormat": "value",
+              "style": "heroCard",
+              "choices": "=conversation.lastOrder",
+              "recognizerOptions": {
+                "recognizeOrdinals": true
+              }
+            }
+          ],
+          "actions": [
+            {
+              "$kind": "Microsoft.TextInput",
+              "$designer": {
+                "id": "LXN2SZ"
+              },
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "prompt": "${TextInput_Prompt_LXN2SZ()}",
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "defaultValueResponse": "",
+              "property": "user.Order"
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "sDj9JS"
+              },
+              "activity": "${SendActivity_sDj9JS()}"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "477tZe"
+              },
+              "condition": "=user.Order == '24122024'",
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "4bTs68"
+                  },
+                  "activity": "${SendActivity_4bTs68()}"
+                },
+                {
+                  "$kind": "Microsoft.SetProperty",
+                  "$designer": {
+                    "id": "cjJ94A"
+                  },
+                  "property": "conversation.lastOrder",
+                  "value": [
+                    "Water Bottle",
+                    "Outdoor Tent",
+                    "Backpack"
+                  ]
+                },
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "JCFycK"
+                  },
+                  "activity": "${SendActivity_JCFycK()}"
+                },
+                {
+                  "$kind": "Microsoft.ChoiceInput",
+                  "$designer": {
+                    "id": "1POYuF"
+                  },
+                  "defaultLocale": "en-us",
+                  "disabled": false,
+                  "maxTurnCount": 3,
+                  "alwaysPrompt": false,
+                  "allowInterruptions": false,
+                  "prompt": "${ChoiceInput_Prompt_1POYuF()}",
+                  "unrecognizedPrompt": "",
+                  "invalidPrompt": "",
+                  "defaultValueResponse": "",
+                  "choiceOptions": {
+                    "includeNumbers": true,
+                    "inlineOrMore": ", or ",
+                    "inlineOr": " or ",
+                    "inlineSeparator": ", "
+                  },
+                  "property": "conversation.lastOrderChoice",
+                  "outputFormat": "value",
+                  "style": "heroCard",
+                  "choices": "=conversation.lastOrder",
+                  "recognizerOptions": {
+                    "recognizeOrdinals": true
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "iSSD6o"
+                  },
+                  "activity": "${SendActivity_iSSD6o()}"
+                },
+                {
+                  "$kind": "Microsoft.SetProperty",
+                  "$designer": {
+                    "id": "wykFc9"
+                  },
+                  "property": "conversation.lastOrderChoice",
+                  "value": "Backpack"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "i0T0xH"
+          },
+          "activity": "${SendActivity_i0T0xH()}"
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "irmD1e"
+          },
+          "activityProcessed": true,
+          "dialog": "cancel_reason"
+        }
+      ]
+    }
+  ],
+  "generator": "order_detail.lg",
+  "recognizer": "order_detail.lu.qna",
+  "id": "order_detail"
+}

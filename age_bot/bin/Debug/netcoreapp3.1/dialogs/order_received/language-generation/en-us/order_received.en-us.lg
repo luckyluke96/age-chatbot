@@ -1,0 +1,23 @@
+[import](common.lg)
+
+# ConfirmInput_Prompt_BNLB87()
+[Activity
+    Text = ${ConfirmInput_Prompt_BNLB87_text()}
+]
+
+# ConfirmInput_Prompt_BNLB87_text()
+- Have you received your order yet ?
+# SendActivity_E6tP65()
+[Activity
+    Text = ${SendActivity_E6tP65_text()}
+]
+
+# SendActivity_E6tP65_text()
+- I will initiate the cancellation ASAP.
+# SendActivity_tuWiKW()
+[Activity
+    Text = ${SendActivity_tuWiKW_text()}
+]
+
+# SendActivity_tuWiKW_text()
+- I see 👀. Please prepare the ${conversation.lastOrderChoice} I’m gonna schedule a pickup for the delivered item RN.

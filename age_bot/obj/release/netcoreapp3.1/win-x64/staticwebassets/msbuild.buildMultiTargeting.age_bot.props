@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/age_bot.props" />
+</Project>

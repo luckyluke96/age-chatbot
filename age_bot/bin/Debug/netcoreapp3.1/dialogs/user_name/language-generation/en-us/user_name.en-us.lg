@@ -1,0 +1,16 @@
+[import](common.lg)
+
+# TextInput_Prompt_nUhst6()
+[Activity
+    Text = ${TextInput_Prompt_nUhst6_text()}
+]
+
+# TextInput_Prompt_nUhst6_text()
+- But first, could u tell me your name?
+# SendActivity_QARt7u()
+[Activity
+    Text = ${SendActivity_QARt7u_text()}
+]
+
+# SendActivity_QARt7u_text()
+- Heyy ${user.name} 😊
